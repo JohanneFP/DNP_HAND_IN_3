@@ -24,7 +24,7 @@ public class PostHttpClient : IPostService
             throw new Exception(content);
         }
     }
-    public async Task<ICollection<Post>> GetAsync(string? userName, int? userId, bool? completedStatus, string? titleContains)
+    public async Task<ICollection<Post>> GetAsync(string? userName, int? userId, string? titleContains)
     {
         HttpResponseMessage response = await client.GetAsync("/post");
         string content = await response.Content.ReadAsStringAsync();

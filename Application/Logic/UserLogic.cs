@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Application.DaoInterfaces;
 using Application.LogicInterfaces;
 using Domain.DTOs;
@@ -23,7 +24,8 @@ public class UserLogic : IUserLogic
         ValidateData(dto);
         User toCreate = new User
         {
-            UserName = dto.UserName
+            UserName = dto.UserName,
+            Password = dto.Password
         };
         
         User created = await userDao.CreateAsync(toCreate);
@@ -46,4 +48,39 @@ public class UserLogic : IUserLogic
     {
         return userDao.GetAsync(searchParameters);
     }
+    
+    public async Task<User> ValidateUser(string username, string password)
+    {
+        User? existing = await userDao.GetByUsernameAsync(username);
+        
+        if (existing == null)
+        {
+            throw new Exception("User not found");
+        }
+
+        if (!existing.Password.Equals(password))
+        {
+            throw new Exception("Password mismatch");
+        }
+
+        return await Task.FromResult(existing);
+    }
+
+    public Task RegisterUser(User user)
+    {
+        if (string.IsNullOrEmpty(user.UserName))
+        {
+            throw new ValidationException("Username cannot be null");
+        }
+
+        if (string.IsNullOrEmpty(user.Password))
+        {
+            throw new ValidationException("Password cannot be null");
+        }
+        
+        userDao.CreateAsync(user);
+        
+        return Task.CompletedTask;
+    }
+    
 }

@@ -23,7 +23,7 @@ else
             <th>Post ID</th>
             <th>User ID</th>
             <th>Post title</th>
-            <th>Completed?</th>
+            <th>Body</th>
         </tr>
         </thead>
         <tbody>
@@ -32,8 +32,9 @@ else
             <tr>
                 <td>@item.Id</td>
                 <td>@item.Owner.UserName</td>
+                <td>@item.OwnerId</td>
                 <td>@item.Title</td>
-                <td>@item.IsCompleted</td>
+                <td>@item.Body</td>
             </tr>
         }
         </tbody>
@@ -52,7 +53,7 @@ else
     {
         try
         {
-            posts = await postService.GetAsync(null, null, null, null);
+            posts = await postService.GetAsync(null, null,  null);
         }
         catch (Exception e)
         {

@@ -3,26 +3,115 @@
     {
       "Id": 1,
       "UserName": "Stine",
+      "Password": null,
       "Posts": null
     },
     {
       "Id": 2,
       "UserName": "Johanne",
+      "Password": null,
       "Posts": null
     },
     {
       "Id": 3,
       "UserName": "Karen",
+      "Password": null,
       "Posts": null
     },
     {
       "Id": 4,
       "UserName": "user",
+      "Password": null,
       "Posts": null
     },
     {
       "Id": 5,
       "UserName": "Rasmus",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 6,
+      "UserName": "JohanneFP",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 7,
+      "UserName": "Lars",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 8,
+      "UserName": "Ole",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 9,
+      "UserName": "Bobby",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 10,
+      "UserName": "Lol",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 11,
+      "UserName": "hej1234",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 12,
+      "UserName": "Lone",
+      "Password": null,
+      "Posts": null
+    },
+    {
+      "Id": 13,
+      "UserName": "johanne653",
+      "Password": "hej123",
+      "Posts": null
+    },
+    {
+      "Id": 14,
+      "UserName": "hej123456",
+      "Password": "hej123",
+      "Posts": null
+    },
+    {
+      "Id": 15,
+      "UserName": "ole123",
+      "Password": "ole123",
+      "Posts": null
+    },
+    {
+      "Id": 16,
+      "UserName": "ol12",
+      "Password": "ol12",
+      "Posts": null
+    },
+    {
+      "Id": 17,
+      "UserName": "ol123",
+      "Password": "ol123",
+      "Posts": null
+    },
+    {
+      "Id": 18,
+      "UserName": "el123",
+      "Password": "el123",
+      "Posts": null
+    },
+    {
+      "Id": 19,
+      "UserName": "hej789",
+      "Password": "hej789",
       "Posts": null
     }
   ],
@@ -32,110 +121,209 @@
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "Create new post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 3,
       "Owner": {
         "Id": 3,
         "UserName": "Karen",
+        "Password": null,
         "Posts": null
       },
       "Title": "Create new post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 4,
       "Owner": {
         "Id": 3,
         "UserName": "Karen",
+        "Password": null,
         "Posts": null
       },
       "Title": "See mynew post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 5,
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "new post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 6,
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "Create new post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 1,
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "Create new post",
-      "IsCompleted": true
+      "Body": null
     },
     {
       "Id": 7,
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "New post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 8,
       "Owner": {
         "Id": 5,
         "UserName": "Rasmus",
+        "Password": null,
         "Posts": null
       },
       "Title": "Hello",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 9,
       "Owner": {
         "Id": 5,
         "UserName": "Rasmus",
+        "Password": null,
         "Posts": null
       },
       "Title": "Hello",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 10,
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "This is my first post",
-      "IsCompleted": false
+      "Body": null
     },
     {
       "Id": 11,
       "Owner": {
         "Id": 1,
         "UserName": "Stine",
+        "Password": null,
         "Posts": null
       },
       "Title": "$wAgGeR",
-      "IsCompleted": false
+      "Body": null
+    },
+    {
+      "Id": 12,
+      "Owner": {
+        "Id": 6,
+        "UserName": "JohanneFP",
+        "Password": null,
+        "Posts": null
+      },
+      "Title": "Hall\u00F8j gutter",
+      "Body": null
+    },
+    {
+      "Id": 13,
+      "Owner": {
+        "Id": 7,
+        "UserName": "Lars",
+        "Password": null,
+        "Posts": null
+      },
+      "Title": "Hej",
+      "Body": "I er seje"
+    },
+    {
+      "Id": 14,
+      "Owner": {
+        "Id": 8,
+        "UserName": "Ole",
+        "Password": null,
+        "Posts": null
+      },
+      "Title": "Nye venner",
+      "Body": "S\u00F8ger nye venner"
+    },
+    {
+      "Id": 15,
+      "Owner": {
+        "Id": 9,
+        "UserName": "Bobby",
+        "Password": null,
+        "Posts": null
+      },
+      "Title": "Swag",
+      "Body": "hAr I sWaG ?????????????????????"
+    },
+    {
+      "Id": 16,
+      "Owner": {
+        "Id": 10,
+        "UserName": "Lol",
+        "Password": null,
+        "Posts": null
+      },
+      "Title": "Lolleren",
+      "Body": "Hva s\u00E5 man"
+    },
+    {
+      "Id": 17,
+      "Owner": {
+        "Id": 12,
+        "UserName": "Lone",
+        "Password": null,
+        "Posts": null
+      },
+      "Title": "Dav",
+      "Body": "Du er sej "
+    },
+    {
+      "Id": 18,
+      "Owner": {
+        "Id": 19,
+        "UserName": "hej789",
+        "Password": "hej789",
+        "Posts": null
+      },
+      "Title": "hej789",
+      "Body": "hej789"
+    },
+    {
+      "Id": 19,
+      "Owner": {
+        "Id": 16,
+        "UserName": "ol12",
+        "Password": "ol12",
+        "Posts": null
+      },
+      "Title": "hi",
+      "Body": "hi"
     }
   ]
 }

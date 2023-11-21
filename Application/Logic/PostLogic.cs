@@ -24,7 +24,7 @@ public class PostLogic : IPostLogic
             throw new Exception($"User with id {dto.OwnerId} was not found.");
         }
 
-        Post post = new Post(user, dto.Title);
+        Post post = new Post(user.Id, dto.Title, dto.Body);
 
         ValidatePost(post);
 
@@ -55,19 +55,14 @@ public class PostLogic : IPostLogic
                 throw new Exception($"User with id {dto.OwnerId} was not found.");
             }
         }
-
-        if (dto.IsCompleted != null && existing.IsCompleted && !(bool)dto.IsCompleted)
-        {
-            throw new Exception("Cannot un-complete a completed Todo");
-        }
+        
 
         User userToUse = user ?? existing.Owner;
         string titleToUse = dto.Title ?? existing.Title;
-        bool completedToUse = dto.IsCompleted ?? existing.IsCompleted;
+        string bodyToUse = dto.Body ?? existing.Body;
         
-        Post updated = new (userToUse, titleToUse)
+        Post updated = new (userToUse.Id, titleToUse, bodyToUse)
         {
-            IsCompleted = completedToUse,
             Id = existing.Id,
         };
 
@@ -84,11 +79,6 @@ public class PostLogic : IPostLogic
             throw new Exception($"post with ID {id} was not found!");
         }
 
-        if (!post.IsCompleted)
-        {
-            throw new Exception("Cannot delete un-completed Todo!");
-        }
-
         await postDao.DeleteAsync(id);
     }
 
@@ -100,7 +90,7 @@ public class PostLogic : IPostLogic
             throw new Exception($"post with id {id} not found");
         }
 
-        return new PostBasicDto(post.Id, post.Owner.UserName, post.Title, post.IsCompleted);
+        return new PostBasicDto(post.Id, post.Owner.UserName, post.Title, post.Body);
     }
 
     private void ValidatePost(Post dto)

@@ -7,5 +7,6 @@ public interface IUserLogic
 {
     Task<User> CreateAsync(UserCreationDto userToCreate);
     public Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters);
-  
+    Task<User> ValidateUser(string username, string password);
+    Task RegisterUser(User user);
 }
